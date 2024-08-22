@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
 from typing import List, Optional
 from sqlalchemy.orm import Session
-import schemas, crud
-from database import SessionLocal
+from . import schemas, crud
+from .database import SessionLocal
 
 app = FastAPI()
 

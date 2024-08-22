@@ -1,6 +1,6 @@
 from typing import List, Optional
 from sqlalchemy.orm import Session
-import models, schemas
+from . import models, schemas
 
 def create_department(db: Session, department: schemas.DepartmentCreate) -> models.Department:
     """
